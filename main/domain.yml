@@ -1,0 +1,131 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - ask_courses
+  - ask_admission
+  - ask_admission_process
+  - ask_entrance
+  - ask_fee
+  - ask_scholarship
+  - ask_ratio
+  - ask_class
+  - ask_intern
+  - ask_library
+  - ask_lab
+  - ask_sport
+  - ask_canteen
+  - ask_club
+  - ask_event
+  - ask_volunteer
+  - ask_leader
+  - ask_tour
+  - ask_career
+  - bot_challenge
+  - fallback
+  - ask_gay
+
+responses:
+  utter_admission:
+  - text: "Generally, students need to have completed their higher secondary education (10+2) or equivalent with a minimum specified percentage.Specific programs may have additional requirements, such as a background in science for IT or engineering courses."   
+
+  utter_admission_process:
+  - text: "Completed application form
+Academic transcripts and certificates
+Passport-sized photographs
+Identification proof (citizenship or passport)
+Entrance exam scorecard"
+
+  utter_entrance:
+  - text: "Yes, Softwarica College often requires an entrance exam for admission, particularly for competitive programs.
+The format typically includes multiple-choice questions covering subjects relevant to the chosen program."
+
+  utter_fee:
+  - text: "The fee structure varies by program. Detailed fee information is usually provided on the college’s official website or can be obtained from the admissions office."
+
+  utter_scholarship:
+  - text: "Scholarships based on merit and need are available.Scholarships are often awarded to students with excellent academic performance or those in financial need."
+
+  utter_ratio:
+  - text: "This ratio can vary but is generally designed to ensure personalized attention and support for students."
+
+  utter_class:
+  - text: "we have typically have moderate class sizes, allowing for interactive learning environments"
+
+  utter_intern:
+  - text: "Opportunities for research and internships are available, often facilitated through partnerships with industries and organizations."
+
+  utter_library:
+  - text: "The college provides a well-stocked library with academic books, journals, and digital resources."
+
+  utter_lab:
+  - text: "Equipped with the latest technology and software to support IT and engineering students."
+
+
+  utter_sport:
+  - text: "Facilities for various sports, including basketball, football, and indoor games, are available."
+
+
+  utter_canteen:
+  - text: "We provide the best quality of food services which is offordable"
+
+
+  utter_club:
+  - text: "Various student clubs and societies for cultural, academic, and recreational activities."
+
+
+  utter_event:
+  - text: "Regular events, including festivals, sports meets, and competitions, are organized."
+
+  utter_volunteer:
+  - text: "you can participate in different events and be volunteer"
+
+  utter_leader:
+  - text: "Students can participate in leadership roles within clubs, student councils, and other organizations."
+
+  utter_career:
+  - text: "Career counseling, job placement support, and workshops are provided to assist students in career planning."
+
+  utter_tour:
+  - text: "Organized to provide practical exposure and experiential learning."
+
+  utter_greet:
+    - text: "Hey! How are you?"
+      # buttons:
+      #   - title: "Courses"
+      #     payload: "/ask_courses"
+
+
+  utter_cheer_up:
+  - text: "i will tell you jokes. J O K E S - jokes"
+    # image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_gay:
+   -  text: "Yes ayush  is gay and ashok are lesbian . they are fucking asshole.crybaby"
+
+  utter_happy:
+  - text: "Great, carry on! Ask any thing about college."
+
+  utter_courses:
+  - text: "We offer the following courses: Science,Management,BIT,BBA,BIM,BBS,MBS,BSc.Microbiology,MSc Microbiology,MIT."
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot for Softwarica college, powered by Rasa."
+
+  utter_default:
+    - text: "Sorry, I'm not sure how to help with that."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

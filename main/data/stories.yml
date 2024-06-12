@@ -1,0 +1,136 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+
+- story: ask about courses
+  steps:
+  - intent: ask_courses
+  - action: utter_courses
+
+- story: ask about admission
+  steps:
+  - intent: ask_admission
+  - action: utter_admission
+
+- story: ask about admission_process
+  steps:
+  - intent: ask_admission_process
+  - action: utter_admission_process
+
+- story: ask about entrance
+  steps:
+  - intent: ask_entrance
+  - action: utter_entrance
+
+- story: ask about fee
+  steps:
+  - intent: ask_fee
+  - action: utter_fee
+
+- story: ask about scholarship
+  steps:
+  - intent: ask_scholarship
+  - action: utter_scholarship 
+
+- story: ask about ratio
+  steps:
+  - intent: ask_ratio
+  - action: utter_ratio
+
+- story: ask about class
+  steps:
+  - intent: ask_class
+  - action: utter_class
+
+- story: ask about intern
+  steps:
+  - intent: ask_intern
+  - action: utter_intern
+
+- story: ask about library
+  steps:
+  - intent: ask_library
+  - action: utter_library  
+
+- story: ask about lab
+  steps:
+  - intent: ask_lab
+  - action: utter_lab
+
+- story: ask about sport
+  steps:
+  - intent: ask_sport
+  - action: utter_sport  
+
+- story: ask about canteen
+  steps:
+  - intent: ask_canteen
+  - action: utter_canteen
+
+- story: ask about club
+  steps:
+  - intent: ask_club
+  - action: utter_club
+
+- story: ask about event
+  steps:
+  - intent: ask_event
+  - action: utter_event
+
+- story: ask about volunteer
+  steps:
+  - intent: ask_volunteer
+  - action: utter_volunteer
+
+- story: ask about leader
+  steps:
+  - intent: ask_leader
+  - action: utter_leader
+
+- story: ask about tour
+  steps:
+  - intent: ask_tour
+  - action: utter_tour
+
+- story: ask about career
+  steps:
+  - intent: ask_career
+  - action: utter_career
+
+- story: Handle fallback
+  steps:
+  - intent: fallback
+  - action: utter_default
+
+
+- story: ask gay
+  steps:
+  - intent: ask_gay
+  - action: utter_gay

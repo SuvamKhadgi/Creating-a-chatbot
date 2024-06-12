@@ -1,0 +1,282 @@
+version: "3.1"
+
+nlu:
+- intent: ask_courses
+  examples: |
+    - What courses are available?
+    - Can you tell me about the available courses?
+    - What courses do you offer?
+    - List the courses you have.
+    - What classes are offered?
+
+- intent: ask_admission
+  examples: |
+    - What qualifications are required for undergraduate admission at KIST College?
+    - What are the prerequisites for applying to undergraduate programs?
+    - What standards must applicants meet to be eligible for undergraduate courses?
+    - What are the admission requirements for undergraduate studies at KIST College?
+    - What are the basic eligibility conditions for enrolling in undergraduate programs?
+
+- intent: ask_admission_process
+  examples: |
+   - What paperwork is necessary to complete the admission process?
+   - Which documents must applicants submit for admission?
+   - What is the list of required documents for applying to KIST College?
+   - What documentation is needed for the admission application?
+   - What are the necessary documents for completing the application process?
+
+- intent: ask_entrance
+  examples: |
+   - Does KIST College require an entrance test for admission? If yes, what does it include?
+   - Is an entrance examination part of the admission process? What is its   and content?
+   - Are prospective students required to take an entrance exam? What is its format and syllabus?
+   - Does admission involve an entrance test? If so, what topics are covered and how is it structured?
+   - What details can you provide about the entrance exam for admission, including format and syllabus?
+
+- intent: ask_fee
+  examples: |
+   - Can you explain the fee schedule for various programs?
+   - What are the tuition fees for different undergraduate courses?
+   - What is the cost of attending different programs at KIST College?
+   - How much does each program cost in terms of fees?
+   - What is the detailed fee structure for all offered programs?
+
+
+- intent: ask_scholarship
+  examples: |
+   - Does KIST College offer scholarships or financial assistance?
+   - What financial aid opportunities are available for students?
+   - Are there scholarship programs or financial aid options provided?
+   - What kinds of scholarships and financial support can students apply for?
+   - Are financial aid or scholarship options accessible to students?
+
+
+- intent: ask_ratio
+  examples: |
+
+   - How many students are there per faculty member?
+   - What is the ratio of students to teachers?
+   - Can you explain the student-to-teacher ratio at KIST College?
+   - What is the average number of students assigned to each faculty member?
+   - How does the student-to-faculty ratio compare at KIST College?
+
+- intent: ask_class
+  examples: |
+   - How many students typically enroll in core classes?
+   - What is the usual size of a core course class?
+   - Can you provide information on the number of students in core course classes?
+   - What is the average class size for core courses?
+   - How large are the core course classes in terms of student numbers?
+
+- intent: ask_intern
+  examples: |
+   - Does KIST College provide research and internship opportunities?
+   - What kinds of research and internship programs are available?
+   - Can students participate in research projects and internships?
+   - Are there provisions for research and internships for students?
+   - What opportunities exist for students to engage in research and internships?
+
+- intent: ask_library
+  examples: |
+   - What kind of resources does the library offer to students?
+   - Can you describe the library facilities and resources available?
+   - What are the library services and resources provided for students?
+   - How well-equipped is the library in terms of resources for students?
+   - What academic resources can students access in the library?
+
+- intent: ask_lab
+  examples: |
+   - What specialized facilities are available for IT students, such as computer labs?
+   - Are there computer labs specifically for IT students?
+   - What kind of specialized resources are provided for students in IT programs?
+   - Does KIST College offer dedicated computer labs for IT courses?
+   - What facilities are available for IT students, including computer labs?
+
+- intent: ask_sport
+  examples: |
+   - What types of sports and recreational amenities are offered to students?
+   - Can you detail the sports and recreation facilities available?
+   - What are the available sports and leisure facilities at KIST College?
+   - What recreational and sports facilities does the college provide?
+   - Are there sports and recreational facilities accessible to student?
+
+- intent: ask_canteen
+  examples: |
+   - What dining options are available on campus?
+   - Are there cafeterias or places to eat within the campus?
+   - What food services and dining facilities are provided for students?
+   - Can students find cafeterias or dining halls on the camp us?
+   - What on-campus dining facilities are accessible to stude nts?
+
+- intent: ask_club
+  examples: |
+   - What student clubs and organizations are available?
+   - Can you list the clubs and societies students can join?
+   - What extracurricular groups and clubs can students participate in?
+   - Are there any student organizations or clubs at KIST College?
+   - What clubs and student groups are offered for extracurricular activities?
+
+- intent: ask_event
+  examples: |
+   - Does KIST College host cultural or sports events?
+   - What cultural and sports events are held at the college?
+   - Are there annual cultural and sports events organized?
+   - What types of cultural or sports events can students participate in?
+   - Does the college arrange any sports or cultural activities?
+
+- intent: ask_volunteer
+  examples: |
+   - What opportunities are there for students to engage in community service?
+   - How can students get involved in volunteer programs?
+   - Are there community service programs available for students?
+   - What volunteer opportunities does KIST College offer?
+   - How do students participate in community service initiatives?
+
+- intent: ask_leader
+  examples: |
+   - What leadership roles are available for students?
+   - Can students hold leadership positions in clubs or organizations?
+   - What opportunities exist for student leadership at KIST College?
+   - How can students become leaders in the college community?
+   - Are there any positions for student leadership and governance?
+
+- intent: ask_tour
+  examples: |
+   - Are field trips or educational tours part of the curriculum?
+   - Does KIST College arrange educational tours for students?
+   - What kinds of field trips or study tours are organized by the college?
+   - Are there any educational tours or trips offered to students?
+   - Does the college provide opportunities for field trips and tours?
+
+- intent: ask_career
+  examples: |
+   - What kind of career support does the college offer?
+   - Can you describe the career services provided to students?
+   - What career resources are accessible for students?
+   - How does KIST College support students in their career planning?
+   - What career services are offered to assist students?
+
+- intent: fallback
+  examples: |
+   - Can you help with something else?
+   - I didn't understand that.
+   - Sorry, I'm not sure what you mean.
+
+- intent: ask_gay
+  examples: |
+   - is ashok gay?
+   - is gay
+   - gay
+   - is ayush 
+   - are ayush lesbian
+   - are lesbian
+   - lesbian
+
+# - intent: ask_
+#   examples: |
+
+# - intent: ask_
+#   examples: |
+
+# - intent: ask_
+#   examples: |
+
+# - intent: ask_
+#   examples: |
+
+# - intent: ask_
+#   examples: |
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    -by
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+ 
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - i am fine
+    - good
+    - nice 
+    - wow
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - bad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
