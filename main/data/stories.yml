@@ -109,10 +109,30 @@ stories:
   - intent: ask_volunteer
   - action: utter_volunteer
 
-- story: ask about leader
+- story: manoj
   steps:
-  - intent: ask_leader
-  - action: utter_leader
+  - intent: manojsir
+  - action: utter_manoj
+
+- story: tulsi
+  steps:
+  - intent: tulsisir
+  - action: utter_tulsi
+
+- story: enroll now
+  steps:
+  - intent: enroll_now
+  - action: utter_enrollnow
+
+- story: Address
+  steps:
+  - intent: Address
+  - action: utter_address
+
+  # - story: ask about volunteer
+  # steps:
+  # - intent: ask_volunteer
+  # - action: utter_volunteer
 
 - story: ask about tour
   steps:
@@ -130,7 +150,40 @@ stories:
   - action: utter_default
 
 
-- story: ask gay
+- story: interactive_story_1
   steps:
-  - intent: ask_gay
-  - action: utter_gay
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+  - intent: deny
+  - action: utter_goodbye
+  - action: utter_goodbye
+  - intent: mood_unhappy
+
+
+- story: out of scope story
+  steps:
+  - intent: out_of_scope
+  - action: utter_out_of_scope
+
+- story: interactive_story_1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: nlu_fallback
+
+- story: User wants to join a course computing
+  steps:
+  - intent: join_course
+  - action: utter_bsc.hons.computing
+  - intent: ask_fee_bsc.hons.computing
+  - action: utter_bsc.hons.computing fee
+
+
+- story: User wants to join a course computing with ai
+  steps:
+  - intent: join_course
+  - action: utter_bsc.hons.computer.science.with.artificial.intelligence
+  - intent: ask_fee_bsc.hons.computer.science.with.artificial.intelligence
+  - action: utter_bsc.hons.computer.science.with.artificial.intelligence fee
