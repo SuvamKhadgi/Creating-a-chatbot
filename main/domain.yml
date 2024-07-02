@@ -1,131 +1,128 @@
-version: "3.1"
-
+version: '3.1'
 intents:
-  - greet
-  - goodbye
-  - affirm
-  - deny
-  - mood_great
-  - mood_unhappy
-  - ask_courses
-  - ask_admission
-  - ask_admission_process
-  - ask_entrance
-  - ask_fee
-  - ask_scholarship
-  - ask_ratio
-  - ask_class
-  - ask_intern
-  - ask_library
-  - ask_lab
-  - ask_sport
-  - ask_canteen
-  - ask_club
-  - ask_event
-  - ask_volunteer
-  - ask_leader
-  - ask_tour
-  - ask_career
-  - bot_challenge
-  - fallback
-  - ask_gay
-
+- affirm
+- ask_admission
+- ask_admission_process
+- ask_canteen
+- ask_career
+- ask_class
+- ask_club
+- ask_courses
+- ask_entrance
+- ask_event
+- ask_fee
+- ask_intern
+- ask_lab
+- ask_library
+- ask_ratio
+- ask_scholarship
+- ask_sport
+- ask_tour
+- ask_volunteer
+- bot_challenge
+- deny
+- fallback
+- goodbye
+- greet
+- mood_great
+- mood_unhappy
+- nlu_fallback
+- out_of_scope
+- enroll_now
+- Address
+- manojsir
+- tulsisir
+- join_course
+- ask_fee_bsc.hons.computing
+- ask_fee_bsc.hons.computer.science.with.artificial.intelligence
+- ask_fee_bsc.hons.ethical.hacking.and.cybersecurity
+- ask_fee_msc.data.science.and.computational.intelligence
 responses:
   utter_admission:
-  - text: "Generally, students need to have completed their higher secondary education (10+2) or equivalent with a minimum specified percentage.Specific programs may have additional requirements, such as a background in science for IT or engineering courses."   
-
+  - text: Generally, students need to have completed their higher secondary education (10+2) or equivalent with a minimum specified percentage.
   utter_admission_process:
-  - text: "Completed application form
-Academic transcripts and certificates
-Passport-sized photographs
-Identification proof (citizenship or passport)
-Entrance exam scorecard"
-
+  - text: Student should bring their +2 certificate for enrollment in softwarica
   utter_entrance:
-  - text: "Yes, Softwarica College often requires an entrance exam for admission, particularly for competitive programs.
-The format typically includes multiple-choice questions covering subjects relevant to the chosen program."
-
+  - text: No, Softwarica college does not require enterance exam .Student with any background can enroll in this college.
   utter_fee:
-  - text: "The fee structure varies by program. Detailed fee information is usually provided on the college’s official website or can be obtained from the admissions office."
-
+  - text: The fee structure varies by program. Detailed fee information is usually provided on the college’s official website or can be obtained from the admissions office.
   utter_scholarship:
-  - text: "Scholarships based on merit and need are available.Scholarships are often awarded to students with excellent academic performance or those in financial need."
-
+  - text: Scholarships based on merit and need are available.Scholarships are often awarded to students with excellent academic performance or those in financial need.
   utter_ratio:
-  - text: "This ratio can vary but is generally designed to ensure personalized attention and support for students."
-
+  - text: This ratio can vary but is generally designed to ensure personalized attention and support for students.
   utter_class:
-  - text: "we have typically have moderate class sizes, allowing for interactive learning environments"
-
+  - text: we have typically have moderate class sizes, allowing for interactive learning environments
   utter_intern:
-  - text: "Opportunities for research and internships are available, often facilitated through partnerships with industries and organizations."
-
+  - text: Opportunities for research and internships are available, often facilitated through partnerships with industries and organizations.
   utter_library:
-  - text: "The college provides a well-stocked library with academic books, journals, and digital resources."
-
+  - text: The college provides a well-stocked library with academic books, journals, and digital resources.
   utter_lab:
-  - text: "Equipped with the latest technology and software to support IT and engineering students."
-
-
+  - text: Equipped with the latest technology and software to support IT and engineering students.
   utter_sport:
-  - text: "Facilities for various sports, including basketball, football, and indoor games, are available."
-
-
+  - text: Facilities for various sports, including basketball, football, and indoor games, are available.
   utter_canteen:
-  - text: "We provide the best quality of food services which is offordable"
-
-
+  - text: We provide the best quality of food services which is offordable.
   utter_club:
-  - text: "Various student clubs and societies for cultural, academic, and recreational activities."
-
-
+  - text: Various student clubs and societies for cultural, academic, and recreational activities.
   utter_event:
-  - text: "Regular events, including festivals, sports meets, and competitions, are organized."
-
+  - text: Regular events, including festivals, sports meets, and competitions, are organized.
   utter_volunteer:
-  - text: "you can participate in different events and be volunteer"
-
-  utter_leader:
-  - text: "Students can participate in leadership roles within clubs, student councils, and other organizations."
-
+  - text: You can participate in different events and be volunteer.
   utter_career:
-  - text: "Career counseling, job placement support, and workshops are provided to assist students in career planning."
-
+  - text: Career counseling, job placement support, and workshops are provided to assist students in career planning.
   utter_tour:
-  - text: "Organized to provide practical exposure and experiential learning."
-
+  - text: Students of First semester will be taken tour for 2 days and final semester student  will be also taken tour.
   utter_greet:
-    - text: "Hey! How are you?"
-      # buttons:
-      #   - title: "Courses"
-      #     payload: "/ask_courses"
-
-
+  - text: Hey! How are you?
+  - text: Hello! how can I help you?
   utter_cheer_up:
-  - text: "i will tell you jokes. J O K E S - jokes"
-    # image: "https://i.imgur.com/nGF1K8f.jpg"
-
+  - text: I will tell you jokes. J O K E S - jokes
   utter_did_that_help:
-  - text: "Did that help you?"
-
-  utter_gay:
-   -  text: "Yes ayush  is gay and ashok are lesbian . they are fucking asshole.crybaby"
-
+  - text: Did that help you?
   utter_happy:
-  - text: "Great, carry on! Ask any thing about college."
-
+  - text: Great, carry on! Ask any thing about  Softwarica college.
   utter_courses:
-  - text: "We offer the following courses: Science,Management,BIT,BBA,BIM,BBS,MBS,BSc.Microbiology,MSc Microbiology,MIT."
-
+  - text: 'We offer the following courses: BSc (Hons) Computer Science with Artificial Intelligence , BSc (Hons) Computing ,BSc (Hons) Ethical Hacking and Cybersecurity ,MSc Data Science and Computational Intelligence'
   utter_goodbye:
-  - text: "Bye"
-
+  - text: Bye
   utter_iamabot:
-  - text: "I am a bot for Softwarica college, powered by Rasa."
-
+  - text: I am a bot for Softwarica college, powered by Rasa.
   utter_default:
-    - text: "Sorry, I'm not sure how to help with that."
+  - text: Sorry, I'm not sure how to help with that.
+  utter_out_of_scope:
+  - text: Sorry, I didn't understand that. Can you please rephrase?
+  utter_address:
+  - text: Softwarica College of IT  is located at Dillibazar,Kathmandu.
+  utter_enrollnow:
+  - text: Thats great! Which cource you like to enroll in? 
+  utter_manoj:
+  - text: Manoj is an excellent teacher of Softwarica College of IT . He is Academic Head of Softwarica.
+  utter_tulsi:
+  - text: Tulsi is an excellent teacher of Softwarica College of IT. He teaches about Robotics
+  utter_bsc.hons.computing:
+  - text: BSc (Hons) Computing is a 3-year undergraduate degree program that provides students with a comprehensive understanding of computing and its applications. The program covers a wide range of topics, includingprogramming, data structures, algorithms, operating systems, databases,networking, and web development. Students also learn about ethicaland legal issues related to computing, as well as the social andcultural impact of technology. The program prepares students forcareers in software development, systems analysis, and othercomputing-related fields.
+  utter_bsc.hons.computer.science.with.artificial.intelligence:
+  - text: BSc (Hons) Computer Science with Artificial Intelligence is a 3-year undergraduate degree program that combines the study of computer science with the field of artificial intelligence. The program covers a wide range of topics, including programming, data structures, algorithms, operating systems, databases, networking, and web development. Students also learn about artificial intelligence, machine learning, and natural language processing. The program prepares students for careers in software development, systems analysis, and other computing-related fields.
+  utter_bsc.hons.ethical.hacking.and.cybersecurity:
+  - text: BSc (Hons) Ethical Hacking and Cybersecurity is a 3-year undergraduate degree program that focuses on the field of cybersecurity and ethical hacking. The program covers a wide range of topics, including network security, cryptography, penetration testing, ethical hacking, and digital forensics. Students also learn about legal and ethical issues related to cybersecurity, as well as the social and cultural impact of technology. The program prepares students for careers in cybersecurity, ethical hacking, and other related fields.
+  utter_msc.data.science.and.computational.intelligence:
+  - text: MSc Data Science and Computational Intelligence is a 2-year postgraduate degree program that focuses on the field of data science and computational intelligence. The program covers a wide range of topics, including data mining, machine learning, artificial intelligence, and big data analytics. Students also learn about the ethical and legal issues related to data science, as well as the social and cultural impact of technology. The program prepares students for careers in data science, machine learning, and other related fields.
+  utter_bsc.hons.computing fee:
+  - text: The fee for BSc (Hons) Computing is NPR 94000 per semester with approximately 12 lakhs including admission fee.
+  utter_bsc.hons.computer.science.with.artificial.intelligence fee:
+  - text: The fee for BSc (Hons) Computer Science with Artificial Intelligence is NPR 94000 per semester with approximately 12 lakhs including admission fee.
+  utter_bsc.hons.ethical.hacking.and.cybersecurity fee:
+  - text: The fee for BSc (Hons) Ethical Hacking and Cybersecurity is NPR 94000 per semester with approximately 12 lakhs including admission fee.
+  utter_msc.data.science.and.computational.intelligence fee:
+  - text: The fee for MSc Data Science and Computational Intelligence is NPR 94000 per semester with approximately 12 lakhs including admission fee.
+  
+
+actions:
+- utter_greet
+- action_default_fallback
+
 
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
+
