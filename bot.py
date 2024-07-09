@@ -15,6 +15,9 @@ from nltk.tokenize import sent_tokenize, word_tokenize
 recognizer = sr.Recognizer()
 engine = pyttsx3.init()
 
+# Initialize global variables
+pdf_text = ""  # Initialize pdf_text as an empty string
+
 # Set speech rate
 def set_speech_rate(rate):
     engine.setProperty('rate', rate)
@@ -108,7 +111,7 @@ def read_pdf(file_path):
 
 # Function to answer questions based on PDF content
 def answer_from_pdf(question):
-    if not pdf_text:
+    if not pdf_text:  # Check if pdf_text is empty
         return None
     sentences = sent_tokenize(pdf_text)
     for sentence in sentences:
