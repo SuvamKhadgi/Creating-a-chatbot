@@ -29,7 +29,7 @@ def speak(text):
 
 # Function to play a sound indicating that the program is listening
 def play_listening_sound():
-    winsound.PlaySound(r"C:\Users\rujan\Downloads\voice-assistant-sound-name-unknown.wav", winsound.SND_FILENAME)
+    winsound.PlaySound(r"C:\Users\LEGION\Downloads\voice-assistant-sound-name-unknown.wav", winsound.SND_FILENAME)
 
 # Function to recognize speech
 def recognize_speech():
