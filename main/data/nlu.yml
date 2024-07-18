@@ -163,6 +163,7 @@ nlu:
     - Can you help with something else?
     - I didn't understand that.
     - Sorry, I'm not sure what you mean.
+
 - intent: out_of_scope
   examples: |
     - I'm not sure what you're saying
@@ -297,6 +298,9 @@ nlu:
     - I want to enroll now
     - i want to enroll in this college
     - I want to enroll in softwarica.
+    - i want to join in softwarica
+    - i like to get in
+    - i like to join
 
 - intent: Address
   examples: |
@@ -334,3 +338,88 @@ nlu:
     - I want to join [course]
     - I want to join [course] (course)
     - I want to enroll in [course] course
+
+- intent: course_bsc.hons.computing
+  examples: |
+    - I want to study computing.
+    - I want bsc hons computing
+    - bsc hons computing
+    - Bsc computing
+
+- intent: course_bsc.hons.computer.science.with.artificial.intelligence
+  examples: |
+    - I want to study computer science with AI
+    - I want bsc hons computer science
+    - study about artificial intelligence
+    - enroll in computer science with AI
+
+- intent: course_bsc.hons.ethical.hacking.and.cybersecurity
+  examples: |
+    - I want to study ethical hacking
+    - i want to study hacking
+    - I want to study bsc.hons.ethical hacking and cybersecurity
+    - I want to enroll in cybersecurity
+    - study hacking
+
+- intent: course_msc.data.science.and.computational.intelligence
+  examples: |
+    - I want to study data science
+    - I want to study msc in data science
+    - I want to study computational intelligennce
+    - study about data science
+
+- intent: ug_courses
+  examples: |
+    - what are the total credit of UG courses?
+
+
+- intent: accreditation
+  examples: |
+    - what is accreditation of softwarica college/courses?
+    - what is accreditation of softwarica college?
+
+
+- intent: credit_transfer
+  examples: |
+    - can i transfer credit from softwarica college to other colleges/universities?
+    - can i transfer credit from softwarica college to other colleges?
+    - can i transfer credit from softwarica college?
+
+- intent: credit_transfer_australia
+  examples: |
+    - can i transfer credit from softwarica college to australian universities?
+
+- intent: learning_outcomes
+  examples: |
+    - what are the learning outcomes of softwarica college?
+
+- intent: teaching
+  examples: |
+    - what is the teaching methodology of softwarica college?
+    - how will i be taught?
+
+- intent: assessed
+  examples: |
+    - what is the assessed method of softwarica college?
+    - how will i be assessed?
+
+- intent: career_computing
+  examples: |
+    - what career path can i take after computing BSc Computing?
+    - what can i become after doing computing?
+    - jobs after bsc computing
+    
+
+
+- intent: career_ethical
+  examples: |
+    - What career path can I take after completing BSc Ethical Hacking and Cybersecurity?
+    - What can I become after doing ethical hacking and cybersecurity?
+    - jobs after bsc ethical hacking and cybersecurity
+
+
+- intent: university
+  examples: |
+    - what is the university of softwarica college?
+    - which university is this college linked to?
+    - which university is softwarica affilated?

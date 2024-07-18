@@ -37,6 +37,20 @@ intents:
 - ask_fee_bsc.hons.computer.science.with.artificial.intelligence
 - ask_fee_bsc.hons.ethical.hacking.and.cybersecurity
 - ask_fee_msc.data.science.and.computational.intelligence
+- course_bsc.hons.computing
+- course_bsc.hons.computer.science.with.artificial.intelligence
+- course_bsc.hons.ethical.hacking.and.cybersecurity
+- course_msc.data.science.and.computational.intelligence
+- ug_courses
+- accreditation
+- credit_transfer
+- credit_transfer_australia
+- learning_outcomes
+- teaching
+- assessed
+- career_computing
+- career_ethical
+- university
 responses:
   utter_admission:
   - text: Generally, students need to have completed their higher secondary education (10+2) or equivalent with a minimum specified percentage.
@@ -94,7 +108,7 @@ responses:
   utter_address:
   - text: Softwarica College of IT  is located at Dillibazar,Kathmandu.
   utter_enrollnow:
-  - text: Thats great! Which cource you like to enroll in? 
+  - text: Thats great! Which cource you like to enroll or study in? 
   utter_manoj:
   - text: Manoj is an excellent teacher of Softwarica College of IT . He is Academic Head of Softwarica.
   utter_tulsi:
@@ -115,12 +129,45 @@ responses:
   - text: The fee for BSc (Hons) Ethical Hacking and Cybersecurity is NPR 94000 per semester with approximately 12 lakhs including admission fee.
   utter_msc.data.science.and.computational.intelligence fee:
   - text: The fee for MSc Data Science and Computational Intelligence is NPR 94000 per semester with approximately 12 lakhs including admission fee.
-  
-
+  utter_great_course:
+  - text: Great choice! 
+  utter_university:
+  - text: Softwarica College of IT is affiliated to Coventry University which is located in UK.
+  utter_career_ethical:
+  - text: BSc Ethical Hacking and Cybersecurity graduates can apply on following career options
+          ecurity researcher
+          Security analyst
+          Network / System Engineer
+          Pen-Tester
+          VAPT Engineer
+          Quality Assurance Engineer
+  utter_career_computing:
+  - text: BSc Computing graduates can apply on following career options
+          Web App Developer
+          Mobile App Developer
+          Software Engineer
+          UI/UX Designer
+          Software Project Manager
+          Agile Project Manager
+          Quality Assurance Engineer
+  utter_assessed:
+  - text: The assessments are designed to closely match with typical industrial work context for the relevant module. Depending on the module, the assessment method varies. The assessment method includes Video screencast, Audio recordings, and portfolio submission.
+  utter_teaching:
+  - text: We practice effective learning approaches including Activity Led Learning, Student Centric Learning, and Blended teaching method. We value more in providing close to real-world experiences to our students by the design of authentic teaching materials and assessments.
+  utter_learning_outcomes:
+  - text: A BSc (Hons) Computing at Softwarica College aims to develop proficiency in programming languages, problem-solving skills, understanding of computer systems, software development/engineering, web/mobile development, data management/analytics, cybersecurity/ethical considerations, teamwork/communication, and foster a mindset of continuous learning/professional development. These outcomes prepare graduates for careers in computing-related fields.
+  utter_credit_transfer_australia:
+  - text: Yes, a credit transfer facility is available. You can study first year at our college and study rest of the years in Australia. Additionally, we have an agreement with Australian Catholic University for credit transfer.
+  utter_credit_transfer:
+  - text: Yes, a credit transfer facility is available. You can study first year at our college and study rest of the years in Australia and Canada. Additionally, we have an agreement with Australian Catholic University and La Trobe University for credit transfer.
+  utter_ug_courses:
+  - text: Total credits for each UG course are 360. Each year students can study up to 120 credits.  Each year is divided further into two semesters, and in each semester, students will study 60 credits.
+  utter_accreditation:
+  - text: We are currently offering all IT courses in collaboration with Coventry University, UK. Graduates from both UG courses will have bachelor's degree equivalence with Tribhuvan University, Nepal
 actions:
 - utter_greet
 - action_default_fallback
-
+-
 
 session_config:
   session_expiration_time: 60

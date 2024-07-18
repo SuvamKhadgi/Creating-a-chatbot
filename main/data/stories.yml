@@ -129,11 +129,6 @@ stories:
   - intent: Address
   - action: utter_address
 
-  # - story: ask about volunteer
-  # steps:
-  # - intent: ask_volunteer
-  # - action: utter_volunteer
-
 - story: ask about tour
   steps:
   - intent: ask_tour
@@ -152,14 +147,8 @@ stories:
 
 - story: interactive_story_1
   steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_great
-  - action: utter_happy
-  - intent: deny
+  - intent: goodbye
   - action: utter_goodbye
-  - action: utter_goodbye
-  - intent: mood_unhappy
 
 
 - story: out of scope story
@@ -167,11 +156,6 @@ stories:
   - intent: out_of_scope
   - action: utter_out_of_scope
 
-- story: interactive_story_1
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: nlu_fallback
 
 - story: User wants to join a course computing
   steps:
@@ -187,3 +171,81 @@ stories:
   - action: utter_bsc.hons.computer.science.with.artificial.intelligence
   - intent: ask_fee_bsc.hons.computer.science.with.artificial.intelligence
   - action: utter_bsc.hons.computer.science.with.artificial.intelligence fee
+
+- story: user want to study computing
+  steps: 
+  - intent: course_bsc.hons.computing
+  - action: utter_great_course
+  
+- story: user want to study Ai
+  steps: 
+  - intent: course_bsc.hons.computer.science.with.artificial.intelligence
+  - action: utter_great_course
+
+- story: user want to study hacking
+  steps: 
+  - intent: course_bsc.hons.ethical.hacking.and.cybersecurity
+  - action: utter_great_course
+
+- story: user want to study data science
+  steps: 
+  - intent: course_msc.data.science.and.computational.intelligence
+  - action: utter_great_course
+
+- story: 
+  steps:
+  - intent: ug_courses
+  - action: utter_ug_courses
+
+- story: 
+  steps:
+  - intent: accreditation
+  - action: utter_accreditation
+
+- story: 
+  steps:
+  - intent: credit_transfer
+  - action: utter_credit_transfer
+
+- story: 
+  steps:
+  - intent: credit_transfer_australia
+  - action: utter_credit_transfer_australia
+
+- story: 
+  steps:
+  - intent: learning_outcomes
+  - action: utter_learning_outcomes
+
+
+- story: 
+  steps:
+  - intent: teaching
+  - action: utter_teaching
+
+
+- story: 
+  steps:
+  - intent: assessed
+  - action: utter_assessed
+
+
+- story: 
+  steps:
+  - intent: career_computing
+  - action: utter_career_computing
+
+- story: 
+  steps:
+  - intent: career_ethical
+  - action: utter_career_ethical
+
+- story: 
+  steps:
+  - intent: university 
+  - action: utter_university
+
+# - story: 
+#   steps:
+#   - intent: 
+#   - action: 
