@@ -51,7 +51,11 @@ intents:
 - career_computing
 - career_ethical
 - university
+- detail
+- softwarica
 responses:
+  utter_softwarica:
+  - text: Softwarica College is working in collaboration with Coventry University, UK, offering a range of undergraduate and postgraduate programmes including BSc (Hons) Computing, BSc (Hons) Ethical Hacking and Cyber Security, BSc (Hons) Computer Science with AI, and MSc Data Science and Computational Intelligence.
   utter_admission:
   - text: Generally, students need to have completed their higher secondary education (10+2) or equivalent with a minimum specified percentage.
   utter_admission_process:
@@ -103,12 +107,13 @@ responses:
   - text: I am a bot for Softwarica college, powered by Rasa.
   utter_default:
   - text: Sorry, I'm not sure how to help with that.
+  - text: Sorry, I am unable to answer that question.
   utter_out_of_scope:
   - text: Sorry, I didn't understand that. Can you please rephrase?
   utter_address:
   - text: Softwarica College of IT  is located at Dillibazar,Kathmandu.
   utter_enrollnow:
-  - text: Thats great! Which cource you like to enroll or study in? 
+  - text: Thats great! Which course you like to enroll or study in? 
   utter_manoj:
   - text: Manoj is an excellent teacher of Softwarica College of IT . He is Academic Head of Softwarica.
   utter_tulsi:
@@ -166,8 +171,9 @@ responses:
   - text: We are currently offering all IT courses in collaboration with Coventry University, UK. Graduates from both UG courses will have bachelor's degree equivalence with Tribhuvan University, Nepal
 actions:
 - utter_greet
-- action_default_fallback
--
+- action_execute_enroll_file
+- actions_mydetails
+
 
 session_config:
   session_expiration_time: 60

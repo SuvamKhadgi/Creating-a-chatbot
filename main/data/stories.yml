@@ -1,7 +1,11 @@
 version: "3.1"
 
 stories:
-
+- story: user ask about softwarica
+  steps:
+  - intent: softwarica
+  - action: utter_softwarica
+  
 - story: happy path
   steps:
   - intent: greet
@@ -175,22 +179,27 @@ stories:
 - story: user want to study computing
   steps: 
   - intent: course_bsc.hons.computing
-  - action: utter_great_course
-  
+  # - action: utter_great_course
+  - action: action_execute_enroll_file
+
 - story: user want to study Ai
   steps: 
   - intent: course_bsc.hons.computer.science.with.artificial.intelligence
-  - action: utter_great_course
+  # - action: utter_great_course
+  - action: action_execute_enroll_file
 
 - story: user want to study hacking
   steps: 
   - intent: course_bsc.hons.ethical.hacking.and.cybersecurity
-  - action: utter_great_course
+  # - action: 
+  - action: action_execute_enroll_file
+  
 
 - story: user want to study data science
   steps: 
   - intent: course_msc.data.science.and.computational.intelligence
-  - action: utter_great_course
+  # - action: utter_great_course
+  - action: action_execute_enroll_file
 
 - story: 
   steps:
@@ -245,7 +254,12 @@ stories:
   - intent: university 
   - action: utter_university
 
-# - story: 
+
+# - story: User wants to apply for a entollment after initial question
 #   steps:
-#   - intent: 
-#   - action: 
+#   - intent: enroll_now
+#   - action: action_execute_enroll_file
+- story: user want to see their deatails
+  steps:
+  - intent: detail
+  - action: actions_mydetails

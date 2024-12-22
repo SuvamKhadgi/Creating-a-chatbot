@@ -3,66 +3,51 @@
 #
 # See this guide on how to implement these action:
 # https://rasa.com/docs/rasa/custom-actions
-
-
-# This is a simple example for a custom action which utters "Hello World!"
-
-# from typing import Any, Text, Dict, List
-#
-# from rasa_sdk import Action, Tracker
-# from rasa_sdk.executor import CollectingDispatcher
-#
-#
-# class ActionHelloWorld(Action):
-#
-#     def name(self) -> Text:
-#         return "action_hello_world"
-#
-#     def run(self, dispatcher: CollectingDispatcher,
-#             tracker: Tracker,
-#             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-#
-#         dispatcher.utter_message(text="Hello World!")
-#
-#         return []
-
-
-from typing import Any, Text, Dict, List
+import subprocess
+import os
+import logging
 from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
 
 
+class ActionExecuteEnrollFile(Action):
 
-class ActionCourseDetails(Action):
-    def name(self) -> Text:
-        return "action_course_details"
+    def name(self) -> str:
+        return "action_execute_enroll_file"
 
-    def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-        course = tracker.get_slot("course")
-        if course:
-            # Your logic to fetch course details goes here
-            dispatcher.utter_message(text=f"Here are the details for {course}")
-        else:
-            dispatcher.utter_message(text="I'm sorry, I couldn't find details for that course.")
+    def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: dict) -> list:
+        try:
+
+    
+            dispatcher.utter_message(text="I've executed the enrollment process. To enroll you'll need your citizenship and the marksheet of your +2 . I'll turn on the camera and ask for your documents kindly place them within the rectangle to get a picture")
+            script_path = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "new.py"))
+            subprocess.run(["python", script_path], check=True)
+
+
+        except subprocess.CalledProcessError as e:
+            # logging.error(f"Failed to execute loan file: {e}")
+            dispatcher.utter_message(text="Failed to execute the enrollment process. Can you please provide your input again?")
+        except Exception as e:
+            # logging.error(f"An unexpected error occurred: {e}")
+            dispatcher.utter_message(text="An unexpected error occurred while executing the enrollment process. Can you please provide your input again?")
         return []
 
 
+class ActionMyDetails(Action):
 
-class ActionDefaultFallback(Action):
-    def name(self) -> Text:
-        return "action_default_fallback"
+    def name(selfg) -> str:
+        return "actions_mydetails"
 
-    def run(self, dispatcher: CollectingDispatcher,
-            tracker: Tracker,
-            domain: Dict[Text, Any]) -> List[EventType]:
-        dispatcher.utter_message(text="Sorry, I'm not sure how to help with that.")
-        return [UserUtteranceReverted()]
+    def run(selfg, dispatcher: CollectingDispatcher, tracker: Tracker, domain: dict) -> list:
+        try:
+            script_path = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "detect.py"))
+            subprocess.run(["python", script_path], check=True)
 
-class UserUtteranceReverted(Action):
-    def name(self) -> Text:
-        return "action_revert_user_utterance"
 
-    def run(self, dispatcher: CollectingDispatcher,
-            tracker: Tracker,
-            domain: Dict[Text, Any]) -> List[EventType]:
-        return [UserUtteranceReverted()]
+        except subprocess.CalledProcessError as e:
+            # logging.error(f"Failed to execute loan file: {e}")
+            dispatcher.utter_message(text="Failed to recognize.")
+        except Exception as e:
+            # logging.error(f"An unexpected error occurred: {e}")
+            dispatcher.utter_message(text="An unexpected error occurred while recognizing you")
+        return []

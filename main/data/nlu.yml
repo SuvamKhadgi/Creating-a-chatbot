@@ -15,6 +15,8 @@ nlu:
     - What are the prerequisites for applying to undergraduate programs?
     - What standards must applicants meet to be eligible for undergraduate courses?
     - What are the admission requirements for undergraduate studies at Softwarica College?
+    - what's the procedure to join
+    - i want to join college
     - What are the basic eligibility conditions for enrolling in undergraduate programs?
 - intent: ask_admission_process
   examples: |
@@ -423,3 +425,29 @@ nlu:
     - what is the university of softwarica college?
     - which university is this college linked to?
     - which university is softwarica affilated?
+
+- intent: detail
+  examples: |
+    - i want to see my details
+    - i want to see my student details
+    - i want to see my profile details
+    - show my details
+    - give me my detail
+    - show me my details
+    - show me my student details
+    - show me my profile details
+    - give my informations
+    - show my informations
+    - show me my information
+
+
+- intent: softwarica
+  examples: |
+    - what is softwarica college?
+    - what is softwarica college about?
+    - softwarica college information
+    - softwarica college details
+    - softwarica college about us
+    - softwarica college overview
+    - softwarica college information about us
+    - tell me about softwarica.
